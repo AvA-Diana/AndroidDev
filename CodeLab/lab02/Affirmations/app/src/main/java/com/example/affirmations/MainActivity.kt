@@ -15,13 +15,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initialize data.
         val myDataSet = DataSource().loadAffirmations()
         val recyclerView = findViewById<RecyclerView>(R.id.recycle_view)
         recyclerView.adapter = ItemAdapter(this,myDataSet)
 
-        // Use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true)
     }
 }
