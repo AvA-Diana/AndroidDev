@@ -33,8 +33,8 @@ class RulesFragment : Fragment() {
             inflater, R.layout.fragment_rules, container, false)
         binding.rulesPlayButton.setOnClickListener { view:View->
             view.findNavController()
-                .navigate(R.id.titleFragment)
+                .navigate(R.id.action_rulesFragment_to_gameFragment)
         }
-        return inflater.inflate(R.layout.fragment_rules, container, false)
+        return binding.root
     }
 }

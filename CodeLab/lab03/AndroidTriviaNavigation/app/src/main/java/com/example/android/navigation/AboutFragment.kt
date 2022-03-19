@@ -35,6 +35,6 @@ class AboutFragment : Fragment() {
             view.findNavController()
                 .navigate(R.id.action_aboutFragment_to_gameFragment)
         }
-        return inflater.inflate(R.layout.fragment_about, container, false)
+        return binding.root
     }
 }
